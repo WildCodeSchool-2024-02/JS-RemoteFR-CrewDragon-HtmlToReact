@@ -6,28 +6,16 @@
 		<title>Html to React</title>
 		<script src="https://www.unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
 		<script src="https://www.unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
 	</head>
 	<body>
 		<div id="root"></div>
 
-		<script>
-			const titre = React.createElement(
-				"h1",
-				null,
-				"Bonjour le CrewDragon"
+		<script type="text/babel">
+			ReactDOM.render(
+				<h1>Bonjour le CrewDragon</h1>,
+				document.getElementById("root")
 			);
-			const sousTitre = React.createElement(
-				"h2",
-				null,
-				"Je suis un sous titre"
-			);
-
-			const container = React.createElement("div", null, [
-				sousTitre,
-				titre,
-			]);
-
-			ReactDOM.render(container, document.getElementById("root"));
 		</script>
 	</body>
 </html>
