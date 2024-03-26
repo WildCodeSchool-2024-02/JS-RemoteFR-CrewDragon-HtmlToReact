@@ -21,7 +21,19 @@
 				);
 			}
 
-			ReactDOM.render(<BestTeam />, document.getElementById("root"));
+			function AllBest() {
+				return (
+					<div>
+						<BestTeam />
+						<BestTeam />
+						<BestTeam />
+						<BestTeam />
+						<BestTeam />
+					</div>
+				);
+			}
+
+			ReactDOM.render(<AllBest />, document.getElementById("root"));
 		</script>
 	</body>
 </html>
