@@ -11,11 +11,23 @@
 		<div id="root"></div>
 
 		<script>
-
-			ReactDOM.render(
-				React.createElement("h1", null, "Bonjour le CrewDragon"),
-				document.getElementById("root")
+			const titre = React.createElement(
+				"h1",
+				null,
+				"Bonjour le CrewDragon"
 			);
+			const sousTitre = React.createElement(
+				"h2",
+				null,
+				"Je suis un sous titre"
+			);
+
+			const container = React.createElement("div", null, [
+				sousTitre,
+				titre,
+			]);
+
+			ReactDOM.render(container, document.getElementById("root"));
 		</script>
 	</body>
 </html>
