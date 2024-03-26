@@ -12,10 +12,16 @@
 		<div id="root"></div>
 
 		<script type="text/babel">
-			ReactDOM.render(
-				<h1>Bonjour le CrewDragon</h1>,
-				document.getElementById("root")
-			);
+			function BestTeam() {
+				return (
+					<div>
+						<h1>Bonjour le CrewDragon</h1>
+						<h2>je suis un sous titre</h2>
+					</div>
+				);
+			}
+
+			ReactDOM.render(<BestTeam />, document.getElementById("root"));
 		</script>
 	</body>
 </html>
